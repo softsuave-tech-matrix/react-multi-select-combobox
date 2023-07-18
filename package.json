@@ -1,0 +1,81 @@
+{
+  "name": "react-ts-npm-template",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "author": "softsuave-tech-matrix",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@storybook/addon-essentials": "^7.0.27",
+    "@storybook/addon-interactions": "^7.0.27",
+    "@storybook/addon-links": "^7.0.27",
+    "@storybook/blocks": "^7.0.27",
+    "@storybook/react": "^7.0.27",
+    "@storybook/react-vite": "^7.0.27",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/react": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.12",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.26.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "storybook": "^7.0.27",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8 || 18.0.0"
+  },
+  "scripts": {
+    "build-storybook": "storybook build",
+    "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
+    "postinstall": "husky install",
+    "prettierx:all": "prettier --write src/**/*.{js,jsx,ts,tsx}",
+    "rollup": "rimraf dist && npm run lint:fix && npm run prettierx:all && npm install && rollup -c",
+    "storybook": "storybook dev -p 6006"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softsuave-tech-matrix/react-ts-npm-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/softsuave-tech-matrix/react-ts-npm-template/issues"
+  },
+  "homepage": "https://github.com/softsuave-tech-matrix/react-ts-npm-template#readme"
+}

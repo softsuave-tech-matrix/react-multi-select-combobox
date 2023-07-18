@@ -1,0 +1,59 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:storybook/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "import",
+        "jsx-a11y",
+        "prettier",
+        "react",
+        "react-hooks",
+        "storybook"
+    ],
+    "rules": {
+        "newline-before-return": "error",
+        "no-console": "error",
+        "no-empty-function": "error",
+        "no-debugger": "error",
+        "no-undef": "error",
+        "no-unused-vars": "error",
+        "prettier/prettier": "error",
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "semi": [
+            "error",
+            "never"
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        },
+        "react": {
+            "version": "detect"
+        }
+    }
+}
