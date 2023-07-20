@@ -107,6 +107,9 @@ export default function App() {
   );
 }
 ```
+## Demo
+
+https://6480578bad52defd0eefe6ae-vbelaysmmu.chromatic.com/?path=/story/combo-box--simple
 
 ## Props
 
