@@ -1,8 +1,7 @@
 {
-  "name": "react-ts-npm-template",
+  "name": "react-select-combobox",
   "version": "1.0.0",
-  "description": "",
-  "private": "true",
+  "description": "React select control for narrowing down the results",
   "author": "softsuave-tech-matrix",
   "license": "MIT",
   "type": "module",
@@ -74,10 +73,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/softsuave-tech-matrix/react-ts-npm-template.git"
+    "url": "git+https://github.com/softsuave-tech-matrix/react-select-combobox.git"
   },
   "bugs": {
-    "url": "https://github.com/softsuave-tech-matrix/react-ts-npm-template/issues"
+    "url": "https://github.com/softsuave-tech-matrix/react-select-combobox/issues"
   },
-  "homepage": "https://github.com/softsuave-tech-matrix/react-ts-npm-template#readme"
+  "homepage": "https://github.com/softsuave-tech-matrix/react-select-combobox#readme"
 }
