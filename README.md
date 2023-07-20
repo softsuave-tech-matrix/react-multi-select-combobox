@@ -7,7 +7,7 @@ react-select-combobox is a select control component which helps in narrowing dow
 Install react-select-combobox with npm
 
 ```npm
-  npm install @imsuresh206/testing
+  npm install react-select-combobox
 ```
 
 ## Usage/Examples
@@ -16,7 +16,7 @@ Install react-select-combobox with npm
 
 ```javascript
 import React from 'react';
-import { ComboBox } from '@imsuresh206/testing';
+import { ComboBox } from 'react-select-combobox';
 
 const dataProvider = [
   { label: 'Apple', value: 111 },
@@ -47,7 +47,7 @@ export default function App() {
 
 ```javascript
 import React from 'react';
-import { ComboBox } from '@imsuresh206/testing';
+import { ComboBox } from 'react-select-combobox';
 
 const dataProvider = [
   { label: 'Apple', value: 111 },
@@ -73,6 +73,37 @@ export default function App() {
         }}
       />
     </div>
+  );
+}
+```
+
+## Typescript Example
+
+```javascript
+import React from "react";
+import { ComboBox, ComboBoxOptionsType } from "react-select-combobox";
+
+const dataProvider = [
+  { label: "Apple", value: 111 },
+  { label: "Pineapple", value: 112 },
+  { label: "Litchi", value: 113 },
+  { label: "Orange", value: 114 },
+  { label: "Banana", value: 115 }
+];
+
+export default function App() {
+  const [selectedItems, setSelectedItems] = React.useState<
+    ComboBoxOptionsType[] | ComboBoxOptionsType
+  >([]);
+
+  return (
+    <ComboBox
+      dataProvider={dataProvider}
+      value={selectedItems}
+      onComplete={(value) => {
+        setSelectedItems(value);
+      }}
+    />
   );
 }
 ```
