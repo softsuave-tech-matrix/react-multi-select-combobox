@@ -1,8 +1,8 @@
-import { ComboBoxStory } from './ComboBox'
+import ComboBox from 'src/stories/ComboBox'
 
 const storyConfig = {
   title: 'Combo Box',
-  component: ComboBoxStory,
+  component: ComboBox,
   tags: ['autodocs'],
   argTypes: {
     backgroundColor: { control: 'color' },
