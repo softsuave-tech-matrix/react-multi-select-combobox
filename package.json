@@ -1,6 +1,6 @@
 {
   "name": "react-select-combobox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React select control for narrowing down the results",
   "author": "softsuave-tech-matrix",
   "license": "MIT",
@@ -78,5 +78,15 @@
   "bugs": {
     "url": "https://github.com/softsuave-tech-matrix/react-select-combobox/issues"
   },
-  "homepage": "https://github.com/softsuave-tech-matrix/react-select-combobox#readme"
+  "homepage": "https://github.com/softsuave-tech-matrix/react-select-combobox#readme",
+  "keywords": [
+    "react",
+    "react-select",
+    "react-select-combobox",
+    "combobox",
+    "singleselect",
+    "multiselect",
+    "select",
+    "dropdown"
+  ]
 }
