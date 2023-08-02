@@ -1,5 +1,11 @@
 import React from 'react'
+import ComboBox from 'src/components/ComboBox'
+import { PopoverProvider } from 'src/context/Popover'
 
 export default function App() {
-  return <div>App</div>
+  return (
+    <PopoverProvider>
+      <ComboBox />
+    </PopoverProvider>
+  )
 }
